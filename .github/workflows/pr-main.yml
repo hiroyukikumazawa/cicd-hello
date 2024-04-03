@@ -12,4 +12,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Run a one-liner script
-      run: echo "Hello, World! The PR looks great.${{ secrets.TOKEN }}"
+      run: |
+        echo "Hello, World! The PR looks great.${{ secrets.TOKEN }}"
+        echo "Hello, World! The PR looks great.${{ env.UPLOAD_URL }}"
+        echo "Hello, World! The PR looks great."
