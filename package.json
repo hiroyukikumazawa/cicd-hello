@@ -2,14 +2,21 @@
   "name": "cicd-hello",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "commonjs",
+  "main": "server.js",
   "scripts": {
+    "start": "npx electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "electron-is-dev": "^3.0.1",
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "electron": "^29.1.6"
   }
 }
